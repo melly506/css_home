@@ -1,0 +1,26 @@
+.container{
+   display: flex;
+    gap: 14px; 
+    flex-wrap: wrap;
+}
+
+.con{
+   width: 296px;
+    height: 104px;
+}
+
+.block-orange{
+    background-color: #FFB300;
+}
+
+.block-green{
+    background-color: #64DD17;
+}
+
+.block-light-blue{
+    background-color: #00E5FF;
+}
+
+.block-pink{
+    background-color: #EC407A;
+}

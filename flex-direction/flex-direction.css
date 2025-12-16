@@ -1,0 +1,28 @@
+.word{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+.w{
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+}
+.sun{
+    background-color: #e6bb72;
+}
+.sky{
+    background-color: #ee7d7d;
+}
+.water{
+    background-color: #97ee7f;
+}
+.leaves{
+    background-color: #f585e6;
+}
+.wind{
+    background-color: #7284f9;
+}

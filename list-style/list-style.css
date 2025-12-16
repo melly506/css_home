@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 10px;
+} 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+li:first-child{
+    font-weight:700;
+}
+
+li:first-child::after{
+    content: none;
+}
+
+li:nth-child(2){
+    color: #348533; 
+    
+}
+
+li{
+    border-bottom: 2px solid #e0e0e0;
+    padding: 25px;
+    position: relative; 
+    list-style-type: none;  
+}
+
+li::after{
+    content: '';
+    border-radius: 50%;
+    background-color: #3ca53c;
+    width: 15px; 
+    height: 15px; 
+    position: absolute;
+    right: 0;
+}
+
+li:last-child{   
+    border: none;
+}
