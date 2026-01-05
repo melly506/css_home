@@ -3,36 +3,38 @@
 }
 body{
     display: flex;
-    background-color: aqua;
     flex-direction: column;
     min-height: 100vh;
     width:100%;
-    /* overflow: hidden;
-    overflow-wrap: break-word; */
     font-family: 'Playpen Sans';
     font-size: 15px;
+    font-weight:600;
 }
 header{
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 89px;
     background-color:#ffffff;
     justify-content: space-around;
     align-items: center;
+    font-weight:bolder;
 }
 .main_name{
-    width: 220px;
-    height: 75px;
-    /* background-color: blueviolet; */
+    width: 350px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.main_logo{
+    font-size: 44px;
+}
 
 .shop{
     color: #7d7d7d;
 }
+
 main{
     display: flex;
     justify-content: center;
@@ -43,9 +45,56 @@ main{
     background-color:#ffffff;
     position: relative;
 }
+
+.wrapper{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1980px;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+}
+
+.bag{
+    display: flex;
+    flex-basis: 400px;
+    height: 495px;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.block{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.grid::after{
+    content: "—";
+    bottom: 40%;
+    position: absolute;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+img{
+    min-width: 210px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
 .page{
     text-decoration: none;
 }
+
 .page_color{
     color: #121212;
 }
@@ -54,25 +103,25 @@ main{
     display: flex;
     width: 15px;
     height: 65px;
-    /* background-color: aqua; */
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
     right:  0;
+    top: 50%;
 }
 
 footer{
     display: flex;
     width:100%;
-    min-height: 70px;
-    max-height: 240px;
+    min-height: 130px;
+    max-height: 260px;
     background-color: #121212;
     color: #cecece;
     margin-top: auto;
     justify-content: space-around;
     align-items: center;
-
 }
+
 .footer{
     display: flex;
     flex-direction: column;
