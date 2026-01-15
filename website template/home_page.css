@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     width:100%;
     font-family: 'Playpen Sans';
-    font-size: 15px;
+    font-size: 18px;
     font-weight:600;
 }
 header{
@@ -19,6 +19,17 @@ header{
     align-items: center;
     font-weight:bolder;
 }
+
+.account{
+    position: relative;
+}
+
+.material-symbols-outlined{
+    position: fixed;
+    right: 10%;
+    
+}
+
 .main_name{
     width: 350px;
     height: 80px;
@@ -26,6 +37,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.expression-with-universal-design{
+    font-size: small;
 }
 .main_logo{
     font-size: 44px;
@@ -54,13 +68,13 @@ main{
     height: auto;
     justify-content: space-around;
     flex-wrap:wrap;
-
+    gap:10px;
+    margin-bottom: 20px;
 }
 
 .bag{
     display: flex;
-    flex-basis: 400px;
-    height: 495px;
+    flex-basis: calc(25% - 10px);
     gap: 30px;
     flex-direction: column;
 }
@@ -92,34 +106,39 @@ img{
     object-fit:cover;
 }
 .page{
+    display: flex;
     text-decoration: none;
+    
 }
 
 .page_color{
     color: #121212;
 }
 
+
+
 .icons{
     display: flex;
     width: 15px;
-    height: 65px;
+    gap: 5px;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
-    right:  0;
     top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
 }
 
 footer{
     display: flex;
     width:100%;
-    min-height: 130px;
-    max-height: 260px;
     background-color: #121212;
     color: #cecece;
     margin-top: auto;
     justify-content: space-around;
     align-items: center;
+    padding: 15px;
 }
 
 .footer{
