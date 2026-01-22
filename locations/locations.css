@@ -1,0 +1,160 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  border: 3px solid gray;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header{
+    display: flex;
+    background-color: aqua;
+    height: 80px;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    border: 3px solid gray;
+}
+
+.icons_location{
+    background-color: brown;
+    width: 40px;
+    height: 50px;
+}
+
+.slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 35px;
+    background-color: chocolate;
+}
+
+main{
+    display: flex;
+    border: 3px solid gray;
+    background-color: blueviolet;
+    flex: 1;
+}
+
+.wraper_main{
+  display: flex;
+  width: 100%;
+}
+
+.geolocation{
+  display: flex;
+  background-color: blue;
+  flex: 0 0 300px;
+  border: 3px solid gray;
+  align-items: stretch;
+  flex-direction: column;
+ 
+}
+
+.geolocation_wraper{
+  display: flex;
+  background-color: chartreuse;
+  flex: 0 0 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3px;
+  max-height: 60px;
+}
+
+.in_geolocation{
+  top: 20px;
+  left: 10px;
+  border: 3px solid gray;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.in_geolocation::placeholder{
+  text-align: center;
+}
+
+.search{
+  display: flex;
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid gray;
+  background-color: #657688;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_wraper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color:hotpink;
+ 
+}
+
+.map{
+  display: flex;
+  background-color: darkcyan;
+  flex: 2;
+  
+  border: 3px solid gray;
+}
