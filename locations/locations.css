@@ -71,11 +71,21 @@ header{
 }
 
 .icons_location{
-    background-color: brown;
+    background-color: rgb(237, 213, 213);
     width: 40px;
     height: 50px;
 }
 
+.material-symbols-outlined {
+  width: 40px;
+  height: 50px;
+  color: #c03303;
+}
+
+.marck-script {
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+}
 .slogan{
     display: flex;
     justify-content: center;
@@ -100,7 +110,7 @@ main{
 .geolocation{
   display: flex;
   background-color: blue;
-  flex: 0 0 300px;
+  flex: 0 0 420px;
   border: 3px solid gray;
   align-items: stretch;
   flex-direction: column;
@@ -110,11 +120,13 @@ main{
 .geolocation_wraper{
   display: flex;
   background-color: chartreuse;
-  flex: 0 0 300px;
+  flex: 0 0 422px;
   align-items: center;
   justify-content: space-evenly;
   gap: 3px;
   max-height: 60px;
+  border: 3px solid gray;
+
 }
 
 .in_geolocation{
@@ -142,19 +154,75 @@ main{
   justify-content: center;
 }
 
-.text_wraper{
-  display: flex;
+.text_location{
+  display: none;
   align-items: center;
   justify-content: center;
   flex: 1;
   background-color:hotpink;
- 
+  font-size: 15px;
+  color: #657688;
+}
+
+.list_location{
+  display: flex;
+  flex-basis: 420px;
+}
+
+.forms_McD{
+  display: flex;
+  height: 80px;
+  flex-basis: 420px;
+  border: 3px solid gray;
+}
+
+.test_img{
+  display: flex;
+  flex: 1;
+  background-color: darkorchid;
+} 
+.img_McD{
+  display: flex;
+  flex: 1; 
+}
+
+
+
+
+
+
+
+.name_location{
+  background-color: darksalmon;
+}
+
+.name_street{
+  background-color: fuchsia;
+}
+
+.rating_wraper{
+  display: flex;
+  background-color: darkgoldenrod;
+}
+
+.rating{
+  background-color: firebrick;
+}
+
+.description_location{
+  display: flex;
+  flex: 2;
+  background-color: forestgreen;
+  flex-direction: column;
 }
 
 .map{
   display: flex;
-  background-color: darkcyan;
+  background-color:bisque;
   flex: 2;
-  
   border: 3px solid gray;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #657688;
 }
