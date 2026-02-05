@@ -62,7 +62,6 @@ body{
 
 header{
     display: flex;
-    background-color: aqua;
     height: 80px;
     align-items: center;
     gap: 15px;
@@ -71,7 +70,6 @@ header{
 }
 
 .icons_location{
-    background-color: rgb(237, 213, 213);
     width: 40px;
     height: 50px;
 }
@@ -92,13 +90,12 @@ header{
     align-items: center;
     width: 220px;
     height: 35px;
-    background-color: chocolate;
 }
 
 main{
     display: flex;
     border: 3px solid gray;
-    background-color: blueviolet;
+    
     flex: 1;
 }
 
@@ -109,7 +106,6 @@ main{
 
 .geolocation{
   display: flex;
-  background-color: blue;
   flex: 0 0 420px;
   height: 640px;
   border: 3px solid gray;
@@ -120,7 +116,6 @@ main{
 
 .geolocation_wraper{
   display: flex;
-  background-color: chartreuse;
   flex: 0 0 422px;
   align-items: center;
   justify-content: space-evenly;
@@ -141,18 +136,20 @@ main{
 
 .in_geolocation::placeholder{
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .search{
   display: flex;
-  width: 70px;
+  width: 90px;
   height: 50px;
   border-radius: 10px;
-  border: 3px solid gray;
+  border: none;
   background-color: #657688;
   color: aliceblue;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .text_location{
@@ -163,12 +160,17 @@ main{
   background-color:hotpink;
   font-size: 15px;
   color: #657688;
+ 
 }
+
+
 
 .list_location{
   display: flex;
   flex-direction: column;
-  height: 80px;
+  height: 100%;
+  overflow-y: scroll;
+  
 }
 
 .forms_McD{
@@ -176,7 +178,10 @@ main{
   height: 80px;
   flex-basis: 420px;
   border: 3px solid gray;
+
 }
+
+
 
 .test_img{
   height: 80px;
@@ -186,27 +191,18 @@ main{
   display: flex;
   margin: 5px;
   width: 117px;
-  background-color: darkorchid;
-  
 } 
-
-
-
-
-
 
 .description_location{
   display: flex;
   flex: 2;
-  background-color: forestgreen;
   flex-direction: column;
   margin: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .name_location{
-  background-color: darksalmon;
   height: 77px;
- 
 }
 
 .Mcd_text{
@@ -215,9 +211,9 @@ main{
 
 .rating_wraper{
   display: flex;
-  background-color: darkgoldenrod;
   align-items: center;
   justify-content: center;
+  margin: 5px;
   flex-basis: 40px;
 }
 
@@ -227,11 +223,8 @@ main{
 
 }
 
-
-
 .map{
   display: flex;
-  background-color:bisque;
   flex: 2;
   border: 3px solid gray;
   justify-content: center;
