@@ -111,6 +111,7 @@ main{
   display: flex;
   background-color: blue;
   flex: 0 0 420px;
+  height: 640px;
   border: 3px solid gray;
   align-items: stretch;
   flex-direction: column;
@@ -124,7 +125,7 @@ main{
   align-items: center;
   justify-content: space-evenly;
   gap: 3px;
-  max-height: 60px;
+  max-height: 65px;
   border: 3px solid gray;
 
 }
@@ -166,7 +167,8 @@ main{
 
 .list_location{
   display: flex;
-  flex-basis: 420px;
+  flex-direction: column;
+  height: 80px;
 }
 
 .forms_McD{
@@ -177,8 +179,13 @@ main{
 }
 
 .test_img{
+  height: 80px;
+}
+
+.img_McD{
   display: flex;
   margin: 5px;
+  width: 117px;
   background-color: darkorchid;
   
 } 
