@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  border: 3px solid gray;
+  
 }
 
 /* 6. Improve media defaults */
@@ -66,7 +66,9 @@ header{
     align-items: center;
     gap: 15px;
     padding-left: 10px;
-    border: 3px solid gray;
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
+    border-right: 3px solid gray;
 }
 
 .icons_location{
@@ -94,7 +96,7 @@ header{
 
 main{
     display: flex;
-    border: 3px solid gray;
+    
     
     flex: 1;
 }
@@ -108,7 +110,7 @@ main{
   display: flex;
   flex: 0 0 420px;
   height: 640px;
-  border: 3px solid gray;
+  
   align-items: stretch;
   flex-direction: column;
  
@@ -118,25 +120,26 @@ main{
   display: flex;
   flex: 0 0 422px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 3px;
-  max-height: 65px;
-  border: 3px solid gray;
+  max-height: 80px;
+  border-bottom: 3px solid gray;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
 
 }
 
 .in_geolocation{
-  top: 20px;
-  left: 10px;
-  border: 3px solid gray;
-  width: 200px;
+  /* border: 3px solid gray; */
+  width: 300px;
   height: 50px;
   border-radius: 10px;
 }
 
 .in_geolocation::placeholder{
-  text-align: center;
+  text-align: start;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 .search{
@@ -177,7 +180,9 @@ main{
   display: flex;
   height: 80px;
   flex-basis: 420px;
-  border: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-right: 3px solid gray;
+  border-left: 3px solid gray;
 
 }
 
