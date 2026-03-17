@@ -1,0 +1,19 @@
+p{
+    font-size: 14px;
+}
+
+body{
+    padding: 40px;
+}
+
+@media screen and (max-width: 576px){
+    body{
+        padding: 16px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 18px;
+        color:brown;
+    }
+}
