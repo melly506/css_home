@@ -1,0 +1,4 @@
+body{
+    font-size: clamp(14px, 2vw, 40px);
+    /*розповсюджене рідше font-size: 2vw;*/
+}
