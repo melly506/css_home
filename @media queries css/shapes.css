@@ -1,0 +1,90 @@
+.bloks{
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+    flex-wrap: wrap;
+    
+}
+
+.blok-img{
+    display: flex;
+    width: 60vw;
+    height: 160px;
+    border: 2px solid rgb(188, 188, 188);
+    background-color: white;
+    }
+.shared-styles{
+    display: flex;
+    width: 90vw;
+    height: 200px;
+    border: 2px solid rgb(188, 188, 188);
+     border-radius: 20px;
+     gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blok1{
+    background-color: blue;
+}
+
+.blok2{
+    background-color:chartreuse;
+}
+
+.blok3{
+    background-color:firebrick;
+}
+
+.blok4{
+    background-color:darkslateblue;
+}
+
+.blok5{
+    background-color:burlywood;
+}
+
+.blok6{
+    background-color:coral;
+}
+
+@media  screen and (min-width: 600px) {
+    .shared-styles{
+        display: flex;
+        width: 45vw;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .blok-img{
+        display: flex;
+        width: 35vw;
+        height: 120px;
+        margin-top: 30px;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    .shared-styles{
+        display: flex;
+        width: 20vw;
+        height: 320px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .blok-img{
+        display: flex;
+        width: 18vw;
+        height: 235px;
+        margin-top: 30px;
+    }
+}
