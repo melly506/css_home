@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width:100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 195px;
+    background-color: brown;
+    font-weight:bolder;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+
+p:nth-child(0){
+    font-size: 32px; 
+}
+
+
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-text{
+
+}
+
+.banane{
+    border-bottom: 2px solid gray ;
+}
+
+.dnipro{
+    border-bottom: 2px solid gray ;
+}
+
+.whale{
+    border-bottom: 2px solid gray ;
+}
+
+.land{
+    border-bottom: 2px solid gray ;
+}
+
+.mountain{
+    border-bottom: 2px solid gray ;
+}
+
+@media screen and (min-width: 780px){
+    header{
+        display: flex;
+        width: 100%;
+        height: 90px;
+        background-color: bisque;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .logo{
+        display: flex;
+        background-color: blue;
+        flex: 2;
+    }
+    .info{
+        display: flex;
+        background-color: chartreuse;
+        flex: 1;
+    }
+}
+
+
+
+
