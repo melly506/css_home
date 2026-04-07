@@ -77,3 +77,40 @@ h1, h2, h3, h4, h5, h6 {
   background-color: brown;
   text-align: center;
 }
+
+ @media screen and (min-width:600px){
+  
+  .main-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .popular_styles{
+    flex-direction: column;
+    width: calc(50vw - 10px - 10px); /*це вирішує проблему того що: блоки повинні бути 50vw але їм заважає стати в дві колонки margin:10px тобто 
+    з усіх сторін блока відступ 10px , я відняла по боках лише , щоб вмістився блок , але так щоб не підбирати зорово скільки треба vw а за рахунок calc()*/
+  }
+/*чому так працює*/
+  .block-img{
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    /*щоб малюнок розтягувався повністю на повну доступну width and height я поставила обом 100%*/
+    width: 100%;
+    height: 100%;
+  }
+ }
+
+ @media screen and (min-width:1024px) {
+  
+  .main-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .popular_styles{
+    flex-direction: column;
+    width: calc(25vw - 10px - 10px);
+  }
+ }
