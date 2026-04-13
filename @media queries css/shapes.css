@@ -53,8 +53,29 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+
+
 :root{
   --margin: calc(12px * 2);
+}
+
+.main-content{
+  display: flex;
+}
+
+.blocks{
+  background-color: blue;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sidenav{
+  display: flex;
+  width: 150px;
+  background-color: gold;
+  flex: 1;
 }
 
 /*x-max-width:600*/
@@ -64,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   align-items: center;
   position: relative;
-  
+
 }
 
 .block-img{
@@ -81,12 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: brown;
   text-align: center;
 }
-
-/* .sidenav{
-  height: 100vh;
-  width: 150px;
-  background-color: gold;
-} */
 
  @media screen and (min-width:600px){
   
