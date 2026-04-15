@@ -42,60 +42,55 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-/*
-  10. Create a root stacking context
-*/
+/* 10. Create a root stacking context */
 #root, #__next {
   isolation: isolate;
 }
 
-
-
-:root{
-  --margin: calc(12px * 2);
+:root {
+  --margin: 24px;
 }
 
-.main-content{
+.main-content {
   display: flex;
 }
 
-.blocks{
+.blocks {
   background-color: blue;
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
-.sidenav{
+.sidenav {
   display: flex;
   width: 150px;
   background-color: gold;
-  flex: 1;
+  min-height: 100vh;
 }
 
 /*x-max-width:600*/
-.popular_styles{
+.popular_styles {
   display: flex;
   background-color: chartreuse;
   margin: 10px;
   align-items: center;
   position: relative;
-
 }
 
-.block-img{
+.block-img {
   width: 75%;
   padding: 5px;
   object-fit: cover;
   aspect-ratio: 16 / 9;
 }
 
-.description-text{
+.description-text {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -103,37 +98,45 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
- @media screen and (min-width:600px){
-  
-  .main-content{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .popular_styles{
+@media screen and (min-width: 600px) {
+
+  .popular_styles {
     flex-direction: column;
-    width: calc(50vw - var(--margin)); /*це вирішує проблему того що: блоки повинні бути 50vw але їм заважає стати в дві колонки margin:10px тобто 
-    з усіх сторін блока відступ 10px , я відняла по боках лише , щоб вмістився блок , але так щоб не підбирати зорово скільки треба vw а за рахунок calc()*/
+    width: calc(50% - var(--margin));
   }
-/*чому так працює*/
-  .block-img{
+
+  /*чому так працює*/
+  .block-img {
     object-fit: cover;
     aspect-ratio: 16 / 9;
     /*щоб малюнок розтягувався повністю на повну доступну width and height я поставила обом 100%*/
     width: 100%;
     height: 100%;
   }
- }
 
- @media screen and (min-width:1024px) {
-  
-  .main-content{
-    display: flex;
-    flex-wrap: wrap;
+  .sidenav {
+    width: 200px;
+    background-color: rgb(0, 255, 157);
   }
 
-  .popular_styles{
+  .blocks {
+    flex-direction: row;  /*я це поставила бо на почтку кода написано .blocks{flex-direction:column} і через це ,
+    щоб прибрати вплив цієї властивості на блоки після ширини 600px, я написала flex-direction: row; і блоки йдуть горизонтально, а не вертикально */
+    flex-wrap: wrap;      /* переносяться на новий рядок , а не тулилось все в один*/
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .popular_styles {
     flex-direction: column;
-    width: calc(25vw - var(--margin));
+    width: calc(25% - var(--margin));
   }
- }
+
+  .sidenav {
+    width: 250px;
+    background-color: rgb(255, 0, 106);
+  }
+
+}
