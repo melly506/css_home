@@ -52,10 +52,6 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-:root {
-  --margin: 24px;
-}
-
 .main-content {
   display: flex;
 }
@@ -102,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .popular_styles {
     flex-direction: column;
-    width: calc(50% - var(--margin));
+    width: calc(50% - 20px);
   }
 
   /*чому так працює*/
@@ -131,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .popular_styles {
     flex-direction: column;
-    width: calc(25% - var(--margin));
+    width: calc(25% - 20px);
   }
 
   .sidenav {
