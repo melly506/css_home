@@ -122,11 +122,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   .img1{
     padding-bottom: 0;
+    padding-right: calc(var(--padding) / 2);
   } 
   .img2{
     padding-top: 0;
+    padding-left: calc(var(--padding) / 2);
   }
 
+  .description-text{
+    margin-left: 0;
+    margin-top: var(--padding);
+  }
   .sidenav {
     width: 200px;
     background-color: rgb(0, 255, 157);
