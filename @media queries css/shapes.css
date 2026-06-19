@@ -81,11 +81,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   align-items: center;
   position: relative;  
-}
-.move_img{
-  display: flex;
+  padding: var(--padding);
 }
 
+
+.img1{
+  padding-bottom:calc(var(--padding) / 2) ;
+}
+.img2{
+  padding-top: calc(var(--padding) / 2);
+}
 .block-img {
   width: 100%;
   object-fit: cover;
@@ -97,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: brown;
   text-align: center;
   width: 100%;
+  margin-left: var(--padding);
 }
 
 @media screen and (min-width: 600px) {
@@ -113,6 +119,12 @@ h1, h2, h3, h4, h5, h6 {
   .block-img {
     width: 50%;
     height: 100%;
+  }
+  .img1{
+    padding-bottom: 0;
+  } 
+  .img2{
+    padding-top: 0;
   }
 
   .sidenav {
