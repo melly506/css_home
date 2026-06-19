@@ -25,7 +25,7 @@ body {
 /* 6. Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
@@ -52,6 +52,10 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+:root{
+  --padding: 12px;
+}
+
 .main-content {
   display: flex;
 }
@@ -76,22 +80,23 @@ h1, h2, h3, h4, h5, h6 {
   background-color: chartreuse;
   margin: 10px;
   align-items: center;
-  position: relative;
+  position: relative;  
+}
+.move_img{
+  display: flex;
 }
 
 .block-img {
-  width: 75%;
-  padding: 5px;
+  width: 100%;
   object-fit: cover;
-  aspect-ratio: 16 / 9;
 }
 
 .description-text {
   display: flex;
   flex-direction: column;
-  flex: 1;
   background-color: brown;
   text-align: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
@@ -100,13 +105,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     width: calc(50% - 20px);
   }
-
+  .move_img{
+    display: flex;
+    flex: 1;
+  }
   /*чому так працює*/
   .block-img {
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
-    /*щоб малюнок розтягувався повністю на повну доступну width and height я поставила обом 100%*/
-    width: 100%;
+    width: 50%;
     height: 100%;
   }
 
